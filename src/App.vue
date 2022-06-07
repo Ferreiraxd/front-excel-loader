@@ -2,7 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/documento">Documento enviado normal</router-link> |
+      <router-link to="/base64">Documento en base 64</router-link>
     </nav>
     <router-view/>
   </div>

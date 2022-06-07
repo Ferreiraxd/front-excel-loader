@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import InformeBase64 from '../views/InformeBase64.vue';
+import InformeDocumento from '../views/InformeDocumento.vue';
 
 Vue.use(VueRouter)
 
@@ -11,12 +13,25 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/hola',
+    name: 'hola',
+    component: HomeView
+  },
+  {
+    path: '/documento',
+    name: 'documento',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: InformeDocumento
+  },
+  {
+    path: '/base64',
+    name: 'base64',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: InformeBase64
   }
 ]
 

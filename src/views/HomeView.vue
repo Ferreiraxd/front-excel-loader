@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+      <h1> Ejemplo de consumo de excel </h1>
+      <h3> Hay 2 opciones, mandar el documento entero o en base 64 </h3>
+    </div>
   </div>
 </template>
 
